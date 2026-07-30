@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "utf-8">
+        <title> Christine Oswald's Experiments Page </title>
+    </head>
+    <body>
+        <section style = "text-align: center;">
+            <h1 id = "experiments-header"> Experiments </h1>
+            <header>
+                <nav>
+                    <a href = "index.html"> Home </a> |
+                    <a href = "chrissyAbout.html"> About </a> |
+                    <a href = "chrissySkills.html"> Skills </a> |
+                    <a href = "chrissyProjects.html"> Projects </a> |
+                    <a href = "chrissyExperience.html"> Experience </a> |
+                    <a href = "chrissyEducation.html"> Education </a> |
+                    <a href = "chrissyContact.html"> Contact Me </a> |
+                    <a href = chrissyExperiments.html"> Experiments </a> |
+                </nav>
+            </header>
+        </section>
+
+        <main>
+            <section>
+                <h2> Template Element </h2>
+                <p> Stores an HTML element that isn't displayed immediately</p>
+
+                <template>
+                    <article>
+                        <p> This content is hidden inside of the template card  </p>
+                    </article>
+                </template>
+            </section>
+
+            <section>
+                <h2> Audio Element </h2>
+                <p> Demonstrates how sound can be embedded into an HTML page</p>
+
+                <audio controls>
+                    <source src = "barrelroll.mp3" type = "audio/mp3">
+                    Your browser doesn't support the audio element
+                </audio>
+            </section>
+
+            <section>
+                <h2> Video Element </h2>
+                <p> Demonstrates how videos can be embedded into an HTML page</p>
+
+                <video controls width="320">
+                    <source src = "peak.mp4" type="video/mp4" >
+                </video>
+            </section>
+
+            <section>
+            <h2>Canvas Element</h2>
+            <p>
+                The canvas element creates a drawing area on the page. 
+            </p>
+
+            <canvas id="experiment-canvas" width="300" height="150">
+                Your browser does not support the canvas element.
+            </canvas>
+
+            <script>
+                const canvas = document.getElementById("experiment-canvas");
+                const ctx = canvas.getContext("2d");
+                ctx.strokeRect(20, 20, 260, 100);
+                ctx.font = "40px Arial";
+                ctx.fillText("♥", 140, 80);
+            </script>
+            </section>
+
+            <section>
+            <h2>Source Element</h2>
+            <p>
+                The source element provides different media files for the browser to choose from.
+                It is commonly used inside video, audio, and picture elements.
+            </p>
+
+                <audio controls>
+                    <source src = "supernatural.mp3" type = "audio/mp3">
+                    <source src = "supernatural.wav" type = "audio/wav">
+                    Your browser doesn't support the audio element
+                </audio>
+            </section>
+
+        <hr>
+        <br>
+
+        <footer>
+            <a href="#experiments-header">Back to Top</a>
+            <svg width="100%" height="60" aria-label="Footer message with decorative pink line">
+            <line x1="0" y1="30" x2="100%" y2="30" stroke="pink" stroke-width="20"></line>
+
+            <text x="50%" y="35" text-anchor="middle" fill="black">
+            Thanks for visiting my site! &hearts;
+            </text>
+            </svg>
+        </footer>
+
+    </body>
+</html>

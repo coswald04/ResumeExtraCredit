@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "utf-8">
+        <title> Christine Oswald's Contact Me Page </title>
+    </head>
+    <body>
+        <section style = "text-align: center;">
+            <h1 id = "contact-header"> Contact Info </h1>
+            <header>
+                <nav>
+                    <a href = "index.html"> Home </a> |
+                    <a href = "chrissyAbout.html"> About </a> |
+                    <a href = "chrissySkills.html"> Skills </a> |
+                    <a href = "chrissyProjects.html"> Projects </a> |
+                    <a href = "chrissyExperience.html"> Experience </a> |
+                    <a href = "chrissyEducation.html"> Education </a> |
+                    <a href = "chrissyContact.html"> Contact Me </a> |
+                    <a href = "experiments.html"> Experiments </a> |
+                </nav>
+            </header>
+            <hr>
+        </section>
+
+
+        <h2>Contact Me!</h2>
+
+        <form method="post">
+        <p>
+            <label for="submitted-name">Name:</label>
+            <input 
+            id="submitted-name"
+            name="submitted-name"
+            autocomplete="name">
+        </p>
+
+        <p>
+            <label for="submitted-email">Email:</label>
+            <input 
+            id="submitted-email"
+            name="submitted-email"
+            type="email"
+            autocomplete="email">
+        </p>
+
+        <p>
+            <label for="submitted-message">Message:</label><br>
+            <textarea 
+            id="submitted-message"
+            name="submitted-message"
+            rows="5"
+            cols="40"></textarea>
+        </p>
+
+        <p> By submitting this form, you understand that your name, email, and message may be shared with the website owner. </p>
+
+        <fieldset>
+            <legend>Do you agree to the terms?</legend>
+
+            <label>
+            <input type="radio" name="terms" value="yes">
+            Yes
+            </label>
+
+            <br>
+
+            <label>
+            <input type="radio" name="terms" value="no">
+            No
+            </label>
+        </fieldset>
+
+        <p>
+            <button type="submit">Save</button>
+        </p>
+        </form>
+
+        <hr>
+
+
+        <footer>
+            <a href="#contact-header">Back to Top</a>
+            <svg width="100%" height="60" aria-label="Footer message with decorative pink line">
+            <line x1="0" y1="30" x2="100%" y2="30" stroke="pink" stroke-width="20"></line>
+
+            <text x="50%" y="35" text-anchor="middle" fill="black">
+            Thanks for visiting my site! &hearts;
+            </text>
+            </svg>
+        </footer>
+
+        <section>
+        <button type="button">Special Message For You &star;</button>
+        <dialog open>
+            <p>
+            Thank you for visiting my resume website! 
+            </p>
+            <button type="button">Close</button>
+        </dialog>
+        </section>
+
+    </main>
+    </body>
+</html>

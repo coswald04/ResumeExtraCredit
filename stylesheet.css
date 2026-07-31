@@ -393,6 +393,7 @@ main > section:first-child > p {
     display: flex;
     justify-content: center;
     margin: 0;
+    margin-top: 2rem;
 }
 
 .intro img {
@@ -521,14 +522,12 @@ main > section:first-child > p {
 .projects {
     max-width: 75rem;
     margin: 3rem auto 0;
-}
-
-.projects article {
     display: grid;
     gap: 2rem;
 }
 
-.projects article img {
+
+.projects img {
     width: 100%;
     height: auto;
     aspect-ratio: 16 / 9;
@@ -541,7 +540,7 @@ main > section:first-child > p {
         box-shadow 220ms ease;
 }
 
-.projects article > p:first-of-type {
+.projects > p:first-of-type {
     margin: 0;
     color: var(--muted);
     font-family: "Space Mono", monospace;
@@ -558,7 +557,7 @@ main > section:first-child > p {
     line-height: 1;
 }
 
-.projects article > p:last-of-type {
+.projects > p:last-of-type {
     max-width: 60rem;
     margin: 0;
     color: var(--muted);

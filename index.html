@@ -25,10 +25,21 @@
                     <li> <a href = "chrissyExperience.html"> Experience </a> </li>
                     <li> <a href = "chrissyEducation.html"> Education </a> </li>
                     <li> <a href = "chrissyContact.html"> Contact Me </a> </li>                    
-                </ul>    
+                </ul>
+
+                <form id="theme-picker" hidden>
+                    <label for="theme">Theme</label>
+
+                    <select id="theme" name="theme">
+                        <option value="system">System</option>
+                        <option value="light">Light</option>
+                        <option value="dark">Dark</option>
+                    </select>
+                </form>
+
             </nav>
         </header>
-        <main>
+        <main> 
             <section class = "intro">
                 <figure>
                     <img src = "chrissy1.jpeg" alt = "Photo of website author at the UCSD campus">
@@ -120,5 +131,7 @@
             </ul>
             <p> &copy; Christine Oswald · Made with &hearts; </p>
         </footer>
+
+        <script src="theme-picker.js" type="module"></script>
     </body>
 </html>
